@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Page</title>
+</head>
+<body>
+    <h1>Product Details</h1>
+    <p>Product ID: <input type="text" id="productID"></p>
+    <p>Select Size:
+        <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </p>
+    <h2>Delivery Address</h2>
+    <textarea id="deliveryAddress" rows="4" cols="50"></textarea>
+    <h2>Payment Methods</h2>
+    <input type="checkbox" id="upi"> UPI<br>
+    <input type="checkbox" id="cod"> Cash on Delivery<br>
+    <button onclick="buyNow()">Buy Now</button>
+    <button onclick="continueShopping()">Continue Shopping</button>
+    
+    <script>
+        function buyNow() {
+            // Add logic for buying the product
+            alert('Product bought successfully!');
+        }
+        
+        function continueShopping() {
+            // Add logic for continuing shopping
+            alert('Continue shopping...');
+        }
+    </script>
+</body>
+</html>
